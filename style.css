@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
+  background-color: #b3fed7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@ body {
 .card .back {
   width: 100%;
   height: 100%;
-  background: #8acaea;
+  background: #0596df;
   color: white;
   border-radius: 10px;
   display: flex;
@@ -32,33 +32,33 @@ body {
   align-items: center;
   position: absolute;
   backface-visibility: hidden;
-  transition: transform 0.6s;
+  transition: transform 0.3s;
 }
 
 .card .front {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .card .back {
-  background: #2d98da;
+  background: green;
   transform: rotateY(180deg);
 }
 
-.card.flipped .front {
+.card .flipped .front {
   transform: rotateY(180deg);
 }
 
-.card.flipped .back {
+.card .flipped .back {
   transform: rotateY(360deg);
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px 30px;
   background: #007aff;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
